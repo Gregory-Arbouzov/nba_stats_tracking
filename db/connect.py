@@ -10,8 +10,11 @@ register_adapter(np.int64, AsIs)
 postgres_config = DatabaseConfig(filename = 'database.ini', section = 'postgresql')
 
 class CreateSqlTables:
-    def __init__self(self, file, config):
+    def __init__(self, file, config):
         connection = None
+        self.file = file
+        self.config = config
+        
     try:
         params = self.config
 

@@ -1,4 +1,4 @@
-#import psycopg2
+import psycopg2
 
 from configparser import ConfigParser
 #import pandas as pd

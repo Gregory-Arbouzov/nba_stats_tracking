@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 
 import requests
 import json
@@ -8,6 +9,10 @@ import os
 import re
 import io
 import lxml
+
+load_dotenv()
+
+SCRAPER_API_KEY=os.getenv('SCRAPER_API_KEY')
 
 class GameResults:
     def __init__(self, date):
@@ -26,7 +31,7 @@ class GameResults:
             games_on_date_test_page = requests.get(games_on_date_test_url,params={'render_js': True})               
 
         else:
-           payload = { 'api_key': '1e39e30a6e96d4b3c90d44ae0e3222e2', 'url': games_on_date_test_url, 'country_code': 'us', 'device_type': 'desktop', 'max_cost': '1000', 'session_number': '0', 'render_js': True}
+           payload = { 'api_key': SCRAPER_API_KEY, 'url': games_on_date_test_url, 'country_code': 'us', 'device_type': 'desktop', 'max_cost': '1000', 'session_number': '0', 'render_js': True}
            games_on_date_test_page = requests.get('https://api.scraperapi.com/', params=payload)
 
         game_on_date_test_soup = BeautifulSoup(games_on_date_test_page.text, 'lxml')

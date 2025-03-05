@@ -23,7 +23,7 @@ for day in valid_game_days[:100]:
         try:
             print('attempting to insert ' + str(day))
             #print("""INSERT INTO game_dates_already_scraped (id, dates) VALUES ({0}, {1}); """.format(tuple([day, day])))
-            db1.insert_data(("""INSERT INTO game_dates_already_scraped (id, dates) VALUES (%d, %d); """, (day, day)))
+            db1.insert_data("""INSERT INTO game_dates_already_scraped (id, dates) VALUES (%s, %s); """, (day, day))
         except psycopg2.Error as error:
             print('Failed to insert data:', error)
     else:

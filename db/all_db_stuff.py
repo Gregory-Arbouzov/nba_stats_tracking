@@ -28,9 +28,9 @@ class Database:
         select_data = cursor.fetchall()
         return select_data
 
-    def insert_data(self, insert_query):
+    def insert_data(self, insert_query, data):
         cursor = self.conn.cursor()
-        cursor.execute(insert_query)
+        cursor.execute(insert_query, data)
         self.conn.commit()
 
     def close(self):

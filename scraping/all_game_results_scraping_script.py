@@ -1,6 +1,8 @@
-from db import config
-from db import all_db_stuff
-from db import sql_queries
+from scraping import helpers
+#import db
+from db import config, all_db_stuff, sql_queries
+#from db import All_db_stuff
+#from db import sql_queries
 
 import psycopg2
 from configparser import ConfigParser
@@ -15,3 +17,5 @@ db1.connect()
 #db1.create_table('db/create_table_files/create_game_dates_already_scraped_table.sql')
 
 db1.close()
+
+

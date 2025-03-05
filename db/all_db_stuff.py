@@ -3,7 +3,7 @@ from psycopg2.extensions import register_adapter, AsIs
 
 import numpy as np
 
-from config import DatabaseConfig
+from .config import DatabaseConfig
 
 register_adapter(np.int64, AsIs)
 
@@ -25,7 +25,7 @@ class Database:
     def get_data(self, select_query):
         cursor = self.conn.cursor()
         cursor.execute(select_query)
-        select_data = cursor.fetch_all()
+        select_data = cursor.fetchall()
         return select_data
 
     def insert_data(self, insert_query):

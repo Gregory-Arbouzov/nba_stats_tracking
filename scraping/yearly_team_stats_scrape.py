@@ -22,7 +22,7 @@ class TeamStats:
     def get_results(self, api_connection):
         self.api_connection = api_connection
 
-        team_stats_summary_url = 'https://www.basketball-reference.com/teams/' + self.team + '/' + self.year + '.html'
+        team_stats_summary_url = 'https://www.basketball-reference.com/teams/' + self.team + '/' + str(self.year) + '.html'
         team_stats_summary_page = requests.get(team_stats_summary_url, params={'render_js': True})    
 
         team_stats_df_names = []
@@ -65,7 +65,11 @@ class TeamStats:
             reshaped_team_vs_opp_df['team'] = self.team
             reshaped_team_vs_opp_df['year'] = self.year
 
-            all_team_stats_df = pd.concat([all_team_stats_df,reshaped_team_vs_opp_df])
+            return(reshaped_team_vs_opp_df)
             
         except:
             print('Error: ' + self.team + '_' + str(self.year))
+
+if __name__ == "__main__":
+    test = TeamStats('DAL', '2024')
+    print(test.get_results(api_connection=True))

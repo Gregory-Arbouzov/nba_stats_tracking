@@ -2,12 +2,15 @@ from db import config
 from db import all_db_stuff
 from db import sql_queries
 
+from scraping import *
+from scripts import * 
+
 import psycopg2
 from configparser import ConfigParser
 
 #db.connect.DatabaseConfig(filename = 'database.ini', section = 'postgresql')
 
-postgres_config = config.DatabaseConfig(filename = 'nba_stats_tracking/db/database.ini', section = 'postgresql')
+postgres_config = config.DatabaseConfig(filename = 'db/database.ini', section = 'postgresql')
     
 db1 = all_db_stuff.Database(postgres_config.get_config_params())
 db1.connect()

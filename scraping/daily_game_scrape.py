@@ -28,11 +28,13 @@ class GameResults:
         games_on_date_test_url = 'https://www.basketball-reference.com/boxscores/?month='  + str(int(month)) + '&day=' + str(int(day)) + '&year=' + str(int(year))
 
         if self.api_connection == None:
-            games_on_date_test_page = requests.get(games_on_date_test_url,params={'render_js': True})               
+            games_on_date_test_page = requests.get(games_on_date_test_url,params={'render_js': True})
+            #pass               
 
         else:
            payload = { 'api_key': SCRAPER_API_KEY, 'url': games_on_date_test_url, 'country_code': 'us', 'device_type': 'desktop', 'max_cost': '1000', 'session_number': '0', 'render_js': True}
            games_on_date_test_page = requests.get('https://api.scraperapi.com/', params=payload)
+
 
         game_on_date_test_soup = BeautifulSoup(games_on_date_test_page.text, 'lxml')
 
@@ -68,5 +70,5 @@ class GameResults:
         return(final_df)
     
 if __name__ == "__main__":
-    test = GameResults('20230315')
-    print(test.get_results(api_connection = None))
+    test = GameResults('20230316')
+    print(test.get_results(api_connection=True))

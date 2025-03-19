@@ -1,6 +1,3 @@
-
-
-
 get_all_game_results_dates_already_in_db = """SELECT DISTINCT(dates) FROM game_results;"""
 
 get_all_scrape_attempt_dates = """SELECT DISTINCT(dates) FROM game_dates_already_scraped;"""

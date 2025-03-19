@@ -76,11 +76,11 @@ for i in range(delta.days + 1):
         valid_game_days.append(day)
 
 nba_teams_by_season = {
-    2000: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'VAN', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
-    2001: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'VAN', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
-    2002: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
-    2003: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
-    2004: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
+    2000: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'VAN', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHH'],
+    2001: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'VAN', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHH'],
+    2002: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL'],
+    2003: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL'],
+    2004: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL'],
     2005: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
     2006: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
     2007: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SEA', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA'],
@@ -91,17 +91,17 @@ nba_teams_by_season = {
     2012: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC'],
     2013: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC'],
     2014: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],  # New Orleans Pelicans (formerly Hornets)
-    2015: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2016: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2017: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2018: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2019: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2020: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2021: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2022: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2023: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2024: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP'],
-    2025: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHA', 'OKC', 'NOP']
+    2015: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2016: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2017: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2018: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2019: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2020: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2021: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2022: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2023: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2024: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP'],
+    2025: ['PHO', 'DAL', 'LAL', 'SAS', 'MIN', 'UTA', 'POR', 'SAC', 'LAC', 'GSW', 'DEN', 'MEM', 'CHI', 'IND', 'MIL', 'CLE', 'TOR', 'NYK', 'BOS', 'DET', 'MIA', 'WAS', 'ORL', 'ATL', 'CHO', 'OKC', 'NOP']
 }
 
 valid_seasons = []

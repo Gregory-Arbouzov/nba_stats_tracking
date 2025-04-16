@@ -1,3 +1,6 @@
+# make sure export pythonpath does not double reference the same path ie user/garbouzov....user/garbouzov
+# use export PYTHONPATH=../nba_stats_tracking 
+
 from scraping import helpers, daily_game_scrape
 from db import config, all_db_stuff, sql_queries
 

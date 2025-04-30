@@ -117,9 +117,6 @@ def game_results_cleaning():
 
     return cleaned_df
 
-def train_test_split():
-    pass
-
 if __name__ == "__main__":
     #print(sql_to_df(get_all_yearly_team_stats_data, yearly_opponent_stats_columns).head())
     #print(game_results_cleaning().head())

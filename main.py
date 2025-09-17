@@ -8,6 +8,8 @@ from scripts import *
 import psycopg2
 from configparser import ConfigParser
 
+from fastapi import FastAPI
+
 #db.connect.DatabaseConfig(filename = 'database.ini', section = 'postgresql')
 
 postgres_config = config.DatabaseConfig(filename = 'db/database.ini', section = 'postgresql')
@@ -18,3 +20,10 @@ db1.connect()
 #db1.create_table('db/create_table_files/create_game_dates_already_scraped_table.sql')
 
 db1.close()
+
+api = FastAPI()
+
+@api.get("/")
+
+def index():
+    return {"message": "Hello World"}
